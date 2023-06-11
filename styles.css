@@ -1,0 +1,139 @@
+:root {
+    /* Color Library */
+    --lightGreen: #89c5cc;
+    --lightGray: #F9F9F9;
+    --mediumGray: #7d7987;
+    --mediumGreen: #69b99d;
+    --darkPurple: #1f1534;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+
+    min-height: 100vh;
+}
+
+.page {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 65px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 55px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    width: 267px;
+    justify-content: space-evenly;
+    font-family: 'Mulish', sans-serif;
+
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--darkPurple);
+    opacity: 50%;
+}
+
+ul li a:hover {
+    font-weight: bold;
+    opacity: 100%;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+main h1 {
+    font-family: 'Mulish', sans-serif;
+    font-size: 49px;
+    line-height: 56px;
+    font-weight: normal;
+    margin-bottom: 40px;
+    color: var(--darkPurple);
+}
+
+main h1 span {
+    font-weight: bold;
+    color: var(--lightGreen);
+}
+
+main p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: regular;
+    color: var(--mediumGray);
+    width: 438;
+}
+
+main a {
+    text-decoration: none;
+}
+
+#textContainer {
+    margin-bottom: 40px;
+    width: 489px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    background-color: var(--mediumGreen);
+    border: none;
+    border-radius: 4px;
+    padding: 17px 32px 17px 32px;
+    color: var(--lightGray);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    gap: 10px;
+
+    transition: border-radius 0.6s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #49947a;
+    border-radius: 4px 4px 24px 4px;
+
+}
+
+footer {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: regular;
+    color: var(--darkPurple);
+    text-align: center;
+}
+
+footer a {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--darkPurple);
+}
+
+#balls {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+    z-index: -1;
+}
